@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "hassaneid/iti-java-project"
+        IMAGE_NAME = "ahmedhashim2024/my-awesome-app"
         TAG_VERSION = "${BUILD_NUMBER}"
         CONTAINER_NAME = "iti-java-app"
         HOST_PORT = "8090"
