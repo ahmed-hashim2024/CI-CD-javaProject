@@ -10,11 +10,12 @@ pipeline {
 
     environment {
         IMAGE_NAME = "hassaneid/iti-java-project"
-        TAG_VERSION = "${BUILD_NUMBER}" 
+        TAG_VERSION = "${BUILD_NUMBER}"
         CONTAINER_NAME = "iti-java-app"
-        HOST_PORT = "8090" 
-        
+        HOST_PORT = "8090"
         DOCKER_CRED = credentials('docker-hub-credentials')
+
+        PATH = "/usr/local/bin:${env.PATH}"
     }
 
     stages {
