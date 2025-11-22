@@ -11,7 +11,7 @@ pipeline {
     environment {
         IMAGE_NAME = "ahmedhashim2024/my-awesome-app"
         TAG_VERSION = "${BUILD_NUMBER}"
-        CONTAINER_NAME = "iti-java-app"
+        CONTAINER_NAME = "my-awesome-app"
         HOST_PORT = "8090"
         DOCKER_CRED = credentials('docker-hub-credentials')
 
